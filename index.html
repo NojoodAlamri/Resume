@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f9fb">
+  <meta name="description" content="Nojood AlAmri, Software Engineer based in Jeddah, Saudi Arabia. Enterprise web applications, web performance, accessibility, and user-focused digital solutions.">
+  <meta name="author" content="Nojood AlAmri">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nojood AlAmri | Software Engineer">
+  <meta property="og:description" content="Building reliable, accessible, and high-performance web experiences.">
+  <title>Nojood AlAmri | Software Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2336638c'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='35' fill='white'%3EN%3C/text%3E%3C/svg%3E">
+  <script>
+    // Apply the saved color preference before the page paints.
+    (function () {
+      try {
+        var preference = localStorage.getItem('nojood-theme');
+        if (preference === 'dark' || preference === 'light') {
+          document.documentElement.dataset.theme = preference;
+        }
+      } catch (e) { /* The page works even if storage is disabled. */ }
+    })();
+  </script>
+  <style>
+:root{color-scheme:light;--bg:#f7f9fb;--surface:#ffffff;--ink:#1c2b3d;--text:#455569;--muted:#617185;--line:#dce3ea;--accent:#36638c;--accent-dark:#274e73;--accent-soft:#eaf0f6;--heading:'Segoe UI',Arial,sans-serif;--sans:'Segoe UI',Arial,sans-serif}
+:root[data-theme=dark]{color-scheme:dark;--bg:#141d28;--surface:#1b2836;--ink:#edf3f9;--text:#c4d0df;--muted:#a4b4c7;--line:#354658;--accent:#93bbdf;--accent-dark:#bbd8f1;--accent-soft:#253d53}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--bg:#141d28;--surface:#1b2836;--ink:#edf3f9;--text:#c4d0df;--muted:#a4b4c7;--line:#354658;--accent:#93bbdf;--accent-dark:#bbd8f1;--accent-soft:#253d53}}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.8 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a,button{touch-action:manipulation}button{font:inherit}a:hover{color:var(--accent-dark)}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}::selection{background:var(--accent-soft);color:var(--ink)}svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.container{width:min(1120px,calc(100% - 96px));margin:auto}.skip-link{position:fixed;top:-80px;left:20px;background:var(--ink);color:var(--bg);padding:10px 20px;z-index:10}.skip-link:focus{top:10px}
+.site-header{background:var(--bg);border-bottom:1px solid var(--line)}.header-inner{min-height:98px;display:flex;align-items:center;gap:28px}.logo{display:flex;align-items:center;gap:12px;color:var(--ink);font-size:14px;font-weight:600;letter-spacing:.015em;white-space:nowrap}.logo-mark{font:600 24px var(--heading);color:var(--accent);border-right:1px solid var(--line);padding-right:18px}.top-nav{display:flex;gap:25px;margin-left:auto}.top-nav a{font-size:12px;position:relative;padding:7px 0}.top-nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--accent);transition:width .2s}.top-nav a:hover::after,.top-nav a.is-active::after{width:100%}.theme-toggle{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:50%;width:38px;height:38px;display:grid;place-items:center;cursor:pointer;flex-shrink:0}.theme-toggle:hover{background:var(--accent-soft)}
+.hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,1fr);gap:85px;padding:88px 0 94px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:10px;font-weight:600;color:var(--muted);margin-bottom:27px}.hero h1{font-family:var(--heading);font-size:clamp(60px,6.7vw,88px);font-weight:600;line-height:1.1;letter-spacing:-.045em;color:var(--ink);margin:0 0 29px}.hero h1 .accent{display:block;color:var(--accent);font-style:normal;letter-spacing:-.045em}.hero-lead{font-size:16px;line-height:1.9;max-width:480px;margin:0}.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:32px}.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:46px;font-size:11px;font-weight:600;letter-spacing:.02em;transition:background .2s,color .2s}.button-primary{background:var(--accent);color:var(--bg);border-radius:7px;padding:12px 18px}.button-primary:hover{background:var(--accent-dark);color:var(--bg)}.button-secondary{border-bottom:1px solid var(--line)}.button svg{width:16px;height:16px}
+.sidebar{background:var(--surface);padding:30px;border:1px solid var(--line);border-radius:12px;text-align:left;position:relative;box-shadow:0 6px 24px rgb(25 45 70 / 3%)}.sidebar-name{font:600 24px/1.3 var(--heading);letter-spacing:-.03em;color:var(--ink);margin:0 0 6px}.sidebar-role{font-size:13px;font-weight:600;color:var(--accent);margin:0}.sidebar-desc{font-size:13px;line-height:1.8;margin:17px 0 0;max-width:280px}.sidebar-divider{height:1px;background:var(--line);margin:23px 0}.sidebar-meta{display:grid;gap:17px}.meta-item{display:flex;align-items:flex-start;gap:11px;font-size:12px;line-height:1.75}.meta-item svg{width:16px;height:16px;margin-top:3px;color:var(--muted)}.meta-item a:hover{text-decoration:underline}.sidebar-links{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}.sidebar-link{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:500;color:var(--accent)}.sidebar-link>svg:first-child{display:none}.sidebar-link .arrow{width:14px;height:14px}
+
+.section{padding:55px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:235px minmax(0,1fr);gap:40px}.section-header{display:flex;flex-direction:column;align-items:flex-start;gap:12px}.section-number{font-size:10px;letter-spacing:.16em;color:var(--accent)}.section h2{font:600 24px/1.3 var(--heading);letter-spacing:-.025em;color:var(--ink);margin:0}.prose p{margin:0 0 17px}.prose p:last-child{margin:0}.prose{max-width:715px;font-size:14px}.text-link{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}.text-link:hover{text-decoration-color:var(--accent)}h3{color:var(--ink)}.experience-card{padding:0}.experience-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.experience-top h3{font-size:16px;font-weight:500;margin:0}.experience-org{font-size:12px;margin:5px 0 0}.current-tag{font-size:9px;letter-spacing:.05em;white-space:nowrap;background:var(--accent-soft);color:var(--accent-dark);padding:4px 11px;border-radius:20px}.experience-list{margin:22px 0 0;padding:0 0 0 15px;display:grid;gap:9px;font-size:13px}.experience-list li{padding-left:7px}.experience-list li::marker{color:var(--accent)}
+.work-grid{display:grid;gap:0}.work-card{padding:26px 0;border-top:1px solid var(--line)}.work-card:first-child{border-top:0;padding-top:0}.work-card:last-child{padding-bottom:0}.work-kicker{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}.work-card h3{font:600 22px/1.4 var(--heading);letter-spacing:-.025em;margin:11px 0}.work-card p{font-size:13px;line-height:1.9;margin:0;max-width:690px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:9px;line-height:1.6;border:1px solid var(--line);padding:4px 10px;border-radius:30px;color:var(--muted)}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:27px 45px}.skill-group h3{font-size:12px;font-weight:600;margin:0 0 8px}.skill-group p{font-size:12px;margin:0;color:var(--muted);line-height:1.9}.education-card{display:flex;justify-content:space-between;gap:25px}.education-card h3{font:600 22px/1.4 var(--heading);margin:0 0 10px}.education-card p{font-size:12px;margin:3px 0}.education-card p:last-child{color:var(--muted)}.education-year{font:600 24px var(--heading);color:var(--accent)}.currently{font-size:14px;line-height:1.9}.currently strong{font-weight:500;color:var(--ink)}
+.contact-section{text-align:center;border-top:1px solid var(--line);padding:67px 25px 72px;margin-top:16px;background:var(--surface);border-radius:12px}.contact-section h2{font:600 48px/1.15 var(--heading);letter-spacing:-.04em;color:var(--accent);margin:0 0 18px}.contact-section p{font-size:13px;max-width:440px;margin:0 auto 25px}.site-footer{padding:30px 0;margin-top:35px}.footer-inner{display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}
+@media(min-width:1500px){.hero{padding-top:100px;padding-bottom:100px}}
+@media(max-width:1000px){.container{width:calc(100% - 64px)}.top-nav{gap:17px}.header-inner{gap:20px}.hero{gap:40px}.hero h1{font-size:72px}.section{grid-template-columns:190px minmax(0,1fr);gap:28px}.hero-actions{gap:12px}.sidebar{padding:28px 24px 23px}}
+@media(max-width:760px){.container{width:calc(100% - 40px)}.header-inner{min-height:100px;flex-wrap:wrap;gap:0;padding:17px 0 9px}.logo{margin-right:auto}.theme-toggle{order:1;width:34px;height:34px}.top-nav{order:2;width:100%;margin:10px 0 0;justify-content:space-between;gap:8px}.top-nav a{font-size:10px;padding:6px 0}.hero{padding:48px 0;grid-template-columns:1fr;gap:36px}.hero h1{font-size:66px;margin-bottom:22px}.hero h1 .accent{display:block}.eyebrow{font-size:9px;letter-spacing:.12em;margin-bottom:22px}.hero-lead{font-size:15px}.hero-actions{gap:20px;margin-top:25px}.sidebar{border-radius:14px;padding:24px;text-align:left;display:block}.sidebar-name{font-size:22px;align-self:end}.sidebar-role{font-size:13px}.sidebar-desc{font-size:13px;max-width:none;margin:14px 0 0}.sidebar-divider,.sidebar-meta,.sidebar-links{grid-column:1 / -1}.sidebar-divider{margin:17px 0}.sidebar-meta{gap:10px}.meta-item{font-size:11px}.sidebar-links{justify-content:flex-start;gap:26px}.sidebar-link{font-size:11px}.section{padding:34px 0;grid-template-columns:1fr;gap:25px}.section-header{flex-direction:row;align-items:center;gap:15px}.section h2{font-size:23px}.section-number{font-size:9px}.experience-top{gap:12px}.experience-top h3{font-size:14px}.current-tag{font-size:8px}.experience-org{font-size:11px}.prose{font-size:13px}.work-card h3{font-size:21px}.skills-grid{gap:22px}.education-card h3{font-size:23px}.contact-section{padding:45px 20px;margin-top:8px}.contact-section h2{font-size:38px}.footer-inner{flex-direction:column;gap:6px;text-align:center}.site-footer{margin-top:15px;padding:22px 0}}
+@media(max-width:380px){.hero h1{font-size:58px}.hero-actions{gap:14px}.button{font-size:10px}.button-primary{padding:10px 13px}.experience-top{flex-wrap:wrap}.skills-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+@media print{body{background:#fff;color:#222}.site-header,.hero-actions,.theme-toggle,.contact-section,.site-footer{display:none}.container{width:100%}.hero{padding:15px 0;gap:25px}.hero h1{font-size:60px}.sidebar{background:#f4f4f4}.section{padding:20px 0;gap:20px;grid-template-columns:170px 1fr;break-inside:avoid}.work-card{break-inside:avoid}.tag{color:#444}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Nojood AlAmri, Home">
+        <span class="logo-mark" aria-hidden="true">N</span>
+        <span>Nojood AlAmri</span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Selected Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" title="Toggle color theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="container page-layout" id="top">
+
+
+    <main id="main" class="main-content">
+      <section class="hero" aria-labelledby="hero-title"><div class="hero-copy">
+        <div class="eyebrow">Software Engineer · Jeddah, Saudi Arabia</div>
+        <h1 id="hero-title">Hi, I'm <span class="accent">Nojood.</span></h1>
+        <p class="hero-lead">I build reliable, accessible, and high-performance web experiences, turning complex requirements into practical digital solutions.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.linkedin.com/nojood-alamri" target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <a class="button button-secondary" href="#work">Explore my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14 0m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </div>    <aside class="sidebar" aria-label="Profile">
+      <h2 class="sidebar-name">Nojood AlAmri</h2>
+      <p class="sidebar-role">Software Engineer</p>
+      <p class="sidebar-desc">Enterprise web applications, web performance & accessibility.</p>
+
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-meta">
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>Jeddah, Saudi Arabia</span>
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12c5 3 13 3 18 0"/></svg>
+          <span>Programmer, IT Department<br>College of Nursing, Jeddah</span>
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V7l9-4 9 4v14M9 21v-7h6v7M7 9h.01M12 9h.01M17 9h.01"/></svg>
+          <span><a href="https://ksau-hs.edu.sa/English/Pages/Home.aspx" target="_blank" rel="noopener noreferrer">King Saud bin Abdulaziz University for Health Sciences</a></span>
+        </div>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-links">
+        <a class="sidebar-link" href="https://www.linkedin.com/nojood-alamri" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg>
+          LinkedIn
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="sidebar-link" href="https://ksau-hs.edu.sa/English/Pages/Home.aspx" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V7l9-4 9 4v14M9 21v-7h6v7"/></svg>
+          University Website
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </aside></section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-header"><span class="section-number">01</span><h2 id="about-title">About me</h2></div>
+        <div class="prose">
+          <p>I'm Nojood AlAmri, a Software Engineer based in Jeddah, Saudi Arabia. I currently work as a Programmer in the IT Department at the College of Nursing, Jeddah, <a class="text-link" href="https://ksau-hs.edu.sa/English/Pages/Home.aspx" target="_blank" rel="noopener noreferrer">King Saud bin Abdulaziz University for Health Sciences (KSAU-HS)</a>.</p>
+          <p>My work sits at the intersection of web development, systems analysis, and user experience. I focus on building and maintaining enterprise applications, improving web performance and accessibility, and making digital services easier to use.</p>
+          <p>I particularly enjoy understanding a problem, simplifying the workflow behind it, and turning that understanding into a thoughtful, reliable solution.</p>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-header"><span class="section-number">02</span><h2 id="experience-title">Experience</h2></div>
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <h3>Programmer · IT Department</h3>
+              <p class="experience-org">College of Nursing, Jeddah · <a class="text-link" href="https://ksau-hs.edu.sa/English/Pages/Home.aspx" target="_blank" rel="noopener noreferrer">KSAU-HS</a></p>
+            </div>
+            <span class="current-tag">Current role</span>
+          </div>
+          <ul class="experience-list">
+            <li>Develop and maintain web applications using PHP, JavaScript, HTML, CSS, SQL Server, and MySQL.</li>
+            <li>Build and enhance interfaces and digital content for enterprise SharePoint websites.</li>
+            <li>Improve performance, accessibility, responsive design, and technical SEO across university web experiences.</li>
+            <li>Analyze requirements, resolve production issues, and deliver application features, reporting tools, and workflow improvements.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-header"><span class="section-number">03</span><h2 id="work-title">Selected work</h2></div>
+        <div class="work-grid">
+          <article class="work-card">
+            <span class="work-kicker">01 / Performance & accessibility</span>
+            <h3>University Website Optimization</h3>
+            <p>Enhanced a large university web experience with mobile-first critical CSS, more efficient JavaScript loading, optimized assets, semantic markup, and accessibility improvements, with a focus on Core Web Vitals and real-world usability.</p>
+            <div class="tags"><span class="tag">Core Web Vitals</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">Accessibility</span></div>
+          </article>
+          <article class="work-card">
+            <span class="work-kicker">02 / Enterprise application</span>
+            <h3>Shawrni · Academic Advising</h3>
+            <p>Maintained and enhanced an academic advising platform, including user workflows, email notifications, administrative reporting, and data management features.</p>
+            <div class="tags"><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">Systems Analysis</span></div>
+          </article>
+          <article class="work-card">
+            <span class="work-kicker">03 / Frontend development</span>
+            <h3>University Digital Experiences</h3>
+            <p>Created responsive interfaces and interactive content such as media galleries, academic calendars, dynamic tables, and filtering experiences.</p>
+            <div class="tags"><span class="tag">JavaScript</span><span class="tag">HTML & CSS</span><span class="tag">UI Development</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-header"><span class="section-number">04</span><h2 id="skills-title">Technical expertise</h2></div>
+        <div class="skills-grid">
+          <div class="skill-group"><h3>Frontend development</h3><p>JavaScript, HTML5, CSS3, Responsive Web Design</p></div>
+          <div class="skill-group"><h3>Backend & databases</h3><p>PHP, SQL Server, MySQL</p></div>
+          <div class="skill-group"><h3>Enterprise platforms</h3><p>SharePoint, IIS, Production Web Systems</p></div>
+          <div class="skill-group"><h3>Web quality & engineering</h3><p>Core Web Vitals, Accessibility, Technical SEO, Systems Analysis, Debugging</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-header"><span class="section-number">05</span><h2 id="education-title">Education</h2></div>
+        <div class="education-card">
+          <div>
+            <h3>BSc in Software Engineering</h3>
+            <p>University of Jeddah</p>
+            <p>First Class Honors · GPA: 4.63 / 5.00</p>
+          </div>
+          <span class="education-year">2023</span>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="learning-title">
+        <div class="section-header"><span class="section-number">06</span><h2 id="learning-title">Currently exploring</h2></div>
+        <div class="currently"><strong>Always learning.</strong> I'm expanding my frontend skills with React and TypeScript, and exploring a personal concept called <strong>Saudi Nature Explorer</strong>, a visual, interactive way to discover Saudi Arabia's biodiversity.</div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Let's connect.</h2>
+        <p>Interested in my work or want to connect professionally? You can find me on LinkedIn.</p>
+        <a class="button button-primary" href="https://www.linkedin.com/nojood-alamri" target="_blank" rel="noopener noreferrer">Visit my LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Nojood AlAmri. Built with care.</span>
+      <span>Jeddah, Saudi Arabia · <a href="https://ksau-hs.edu.sa/English/Pages/Home.aspx" target="_blank" rel="noopener noreferrer">KSAU-HS</a></span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById('themeToggle');
+      var icon = document.getElementById('themeIcon');
+      var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+      function isDark() { return root.dataset.theme === 'dark' || (!root.dataset.theme && media && media.matches); }
+      function updateToggle() {
+        var dark = isDark();
+        toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        toggle.setAttribute('aria-pressed', String(dark));
+        icon.innerHTML = dark
+          ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>'
+          : '<path d="M20.7 13A8.5 8.5 0 0 1 11 3.3 8.5 8.5 0 1 0 20.7 13Z"/>';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#141d28' : '#f7f9fb');
+      }
+      toggle.addEventListener('click', function () {
+        var next = isDark() ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('nojood-theme', next); } catch (e) { /* ignore */ }
+        updateToggle();
+      });
+      if (media && media.addEventListener) media.addEventListener('change', updateToggle);
+      updateToggle();
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+      var links = document.querySelectorAll('.top-nav a');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              links.forEach(function (link) {
+                link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
+              });
+            }
+          });
+        }, { rootMargin: '-18% 0px -69% 0px', threshold: 0 });
+        document.querySelectorAll('main section[id]').forEach(function (section) { observer.observe(section); });
+      }
+    })();
+  </script>
+</body>
+</html>
